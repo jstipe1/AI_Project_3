@@ -5,34 +5,34 @@ __Purpose__: the purpose of this project is to nalyze historical unit sales and 
 
 &nbsp; &nbsp; __Step 1__: Pull hisotrical item level unit sales data from exisiting company database  
 &nbsp; &nbsp; __Step 2__: Preprocess the Data  
-&nbsp; &nbsp; &nbsp;__*__: Change datatypes where necessary  
-&nbsp; &nbsp; &nbsp;__*__: Remove 2017 data as it did not contain all metrics  
+&nbsp; &nbsp; &nbsp;__*__ Change datatypes where necessary  
+&nbsp; &nbsp; &nbsp;__*__ Remove 2017 data as it did not contain all metrics  
 &nbsp; &nbsp;__Step 3__: Graph the unit sales history for each brand to show the complexity of the data and show seasonality changes where relevant  
 &nbsp; &nbsp;__Step 4__: Filter data to a single UPC  
 &nbsp; &nbsp;__Step 5__: Calculate the .diff of unit sales to use for modeling, add to the dataframe  
 &nbsp; &nbsp;__Step 6__: Set up, train, tune pytorch based LSTM model  
-&nbsp; &nbsp; &nbsp;__*__: Used 90% of chosed UPC data for training since the full 6 years of history was available  
-&nbsp; &nbsp; &nbsp;__*__: 1 layer nueral network with 2000 epochs produced the best results (tested with 1-6 layers, and from 500-3000 epochs)    
-&nbsp; &nbsp; &nbsp;__*__: printed test results     
-&nbsp; &nbsp; &nbsp;__*__: processed test results in excel and compared them to existing model performance  
+&nbsp; &nbsp; &nbsp;__*__ Used 90% of chosed UPC data for training since the full 6 years of history was available  
+&nbsp; &nbsp; &nbsp;__*__ 1 layer nueral network with 2000 epochs produced the best results (tested with 1-6 layers, and from 500-3000 epochs)    
+&nbsp; &nbsp; &nbsp;__*__ printed test results     
+&nbsp; &nbsp; &nbsp;__*__ processed test results in excel and compared them to existing model performance  
 &nbsp; &nbsp;__Step 7__: Set up, train, tune persistence Long Short-term model  
-&nbsp; &nbsp; &nbsp;__*__: training set was based on all weeks up to the selected forecasted period of 16 weeks  
-&nbsp; &nbsp; &nbsp;__*__: 4 layer nueral network with 3000 epochs produced the best results (tested with 1-6 layers, and from 500-3500 epochs)  
-&nbsp; &nbsp; &nbsp;__*__: printed test results  
-&nbsp; &nbsp; &nbsp;__*__: processed test results in excel and compared them to existing model performance  
+&nbsp; &nbsp; &nbsp;__*__ training set was based on all weeks up to the selected forecasted period of 16 weeks  
+&nbsp; &nbsp; &nbsp;__*__ 4 layer nueral network with 3000 epochs produced the best results (tested with 1-6 layers, and from 500-3500 epochs)  
+&nbsp; &nbsp; &nbsp;__*__ printed test results  
+&nbsp; &nbsp; &nbsp;__*__ processed test results in excel and compared them to existing model performance  
 &nbsp; &nbsp;__Step 8__: Set up, train, Linear Regression model  
-&nbsp; &nbsp; &nbsp;__*__: Additional pre-processing data for Linear, Random Forest, and XG Boost models  
-&nbsp; &nbsp; &nbsp;__*__: training set was based on all weeks up to the selected forecasted period of 16 weeks  
-&nbsp; &nbsp; &nbsp;__*__: printed test results  
-&nbsp; &nbsp; &nbsp;__*__: processed test results in excel and compared them to existing model performance  
+&nbsp; &nbsp; &nbsp;__*__ Additional pre-processing data for Linear, Random Forest, and XG Boost models  
+&nbsp; &nbsp; &nbsp;__*__ training set was based on all weeks up to the selected forecasted period of 16 weeks  
+&nbsp; &nbsp; &nbsp;__*__ printed test results  
+&nbsp; &nbsp; &nbsp;__*__ processed test results in excel and compared them to existing model performance  
 &nbsp; &nbsp;__Step 9__: Set up, train, Random Forest model  
-&nbsp; &nbsp; &nbsp;__*__: training set was based on all weeks up to the selected forecasted period of 16 weeks  
-&nbsp; &nbsp; &nbsp;__*__: printed test results  
-&nbsp; &nbsp; &nbsp;__*__: processed test results in excel and compared them to existing model performance  
+&nbsp; &nbsp; &nbsp;__*__ training set was based on all weeks up to the selected forecasted period of 16 weeks  
+&nbsp; &nbsp; &nbsp;__*__ printed test results  
+&nbsp; &nbsp; &nbsp;__*__ processed test results in excel and compared them to existing model performance  
 &nbsp; &nbsp;__Step 10__: Set up, train, XG Boost model  
-&nbsp; &nbsp; &nbsp;__*__: training set was based on all weeks up to the selected forecasted period of 16 weeks  
-&nbsp; &nbsp; &nbsp;__*__: printed test results  
-&nbsp; &nbsp; &nbsp;__*__: processed test results in excel and compared them to existing model performance
+&nbsp; &nbsp; &nbsp;__*__ training set was based on all weeks up to the selected forecasted period of 16 weeks  
+&nbsp; &nbsp; &nbsp;__*__ printed test results  
+&nbsp; &nbsp; &nbsp;__*__ processed test results in excel and compared them to existing model performance
 
 __Intalls__: A number of installations are needed (and provided) to run the code necessary to complete this project    
   
@@ -91,5 +91,13 @@ from keras.layers import Dense
 [XG Boost Documentation] (https://xgboost.readthedocs.io/en/stable/)
 
 __Resources__:  
-[Xpert Learning Assistance]   
+[Xpert Learning Assistance]  
+[Change string to date](https://www.geeksforgeeks.org/convert-the-column-type-from-string-to-datetime-format-in-pandas-dataframe/)  
+[Int to object ](https://stackoverflow.com/questions/41210199/how-do-i-change-column-type-in-python-from-int-to-object-for-sklearn)  
+[Object to Float](https://stackoverflow.com/questions/48094854/pandas-convert-data-type-from-object-to-float)  
+[Updated Date to year-week format](https://www.statology.org/pandas-week-number-from-date/)
+[Advantages and disadvantages of different tensorflow optimizers ](https://www.geeksforgeeks.org/optimizers-in-tensorflow/)  
+[Pytorch code example ](https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/)  
+[Mutli-step LSTM ](https://machinelearningmastery.com/multi-step-time-series-forecasting-long-short-term-memory-networks-python/)  
+[Running LSTM in Keras ](https://pypi.org/project/keras-on-lstm/)
 [README.md formatting] (https://medium.com/analytics-vidhya/writing-github-readme-e593f278a796)  
