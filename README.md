@@ -32,7 +32,10 @@ __Purpose__: the purpose of this project is to nalyze historical unit sales and 
 &nbsp; &nbsp;__Step 10__: Set up, train, XG Boost model  
 &nbsp; &nbsp; &nbsp;__*__ training set was based on all weeks up to the selected forecasted period of 16 weeks  
 &nbsp; &nbsp; &nbsp;__*__ printed test results  
-&nbsp; &nbsp; &nbsp;__*__ processed test results in excel and compared them to existing model performance
+&nbsp; &nbsp; &nbsp;__*__ processed test results in excel and compared them to existing model performance  
+
+&nbsp; &nbsp;__Conclusion__: Random Forest Model performed the best
+    
 
 __Intalls__: A number of installations are needed (and provided) to run the code necessary to complete this project    
   
