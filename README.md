@@ -99,5 +99,5 @@ __Resources__:
 [Advantages and disadvantages of different tensorflow optimizers ](https://www.geeksforgeeks.org/optimizers-in-tensorflow/)  
 [Pytorch code example ](https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/)  
 [Mutli-step LSTM ](https://machinelearningmastery.com/multi-step-time-series-forecasting-long-short-term-memory-networks-python/)  
-[Running LSTM in Keras ](https://pypi.org/project/keras-on-lstm/)
+[Running LSTM in Keras ](https://pypi.org/project/keras-on-lstm/)  
 [README.md formatting] (https://medium.com/analytics-vidhya/writing-github-readme-e593f278a796)  
