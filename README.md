@@ -1,5 +1,5 @@
 # AI_Project_3
-AI_Project_3
+__Sales Unit Forecasting__
 
 __Purpose__: the purpose of this project is to nalyze historical unit sales and identify modeling technique that optimizes forecast
 
