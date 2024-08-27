@@ -3,10 +3,10 @@ AI_Project_3
 
 __Purpose__: the purpose of this project is to nalyze historical unit sales and identify modeling technique that optimizes forecast
 
-&nbsp; &nbsp; __Step 1__: Pull hisotrical item level unit sales data from exisiting company database 
-&nbsp; &nbsp; __Step 2__: Preprocess the Data   
-&nbsp; &nbsp; &nbsp;__*__: Change datatypes where necessary    
-&nbsp; &nbsp; &nbsp;__*__: Remove 2017 data as it did not contain all metrics
+&nbsp; &nbsp; __Step 1__: Pull hisotrical item level unit sales data from exisiting company database  
+&nbsp; &nbsp; __Step 2__: Preprocess the Data  
+&nbsp; &nbsp; &nbsp;__*__: Change datatypes where necessary  
+&nbsp; &nbsp; &nbsp;__*__: Remove 2017 data as it did not contain all metrics  
 &nbsp; &nbsp;__Step 3__: Graph the unit sales history for each brand to show the complexity of the data and show seasonality changes where relevant  
 &nbsp; &nbsp;__Step 4__: Filter data to a single UPC  
 &nbsp; &nbsp;__Step 5__: Calculate the .diff of unit sales to use for modeling, add to the dataframe  
